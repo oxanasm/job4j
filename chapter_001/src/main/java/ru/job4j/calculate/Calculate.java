@@ -5,7 +5,7 @@ package ru.job4j.calculate;
 */
 
 public class Calculate {
-// Метод main для вывода фразы на экран
+// @param main метод для вывода фразы на экран
 	public static void main (String [] args) {
 		System.out.println("Hello World");
 	}
