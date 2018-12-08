@@ -17,4 +17,12 @@ public class MaxTest {
         int result = maxim.max(2, 3);
         assertThat(result, is(3));
     }
+
+    @Test
+    public void when123Max3() {
+        Max maxim = new Max();
+        int result = maxim.max(3, 2, 1);
+        assertThat(result, is(3));
+    }
+
 }
