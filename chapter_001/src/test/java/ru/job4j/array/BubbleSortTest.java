@@ -15,4 +15,14 @@ public class BubbleSortTest {
         assertThat(result, is(expect));
         //напишите здесь тест, проверяющий сортировку массива из 10 элементов методом пузырька, например {1, 5, 4, 2, 3, 1, 7, 8, 0, 5}.
     }
+
+    @Test
+    public void whenSortArrayWithFiveElementsThenSortedArray() {
+        BubbleSort sorter = new BubbleSort();
+        int[] input = new int[] {1, 5, 4, 2, 1};
+        int[] result = sorter.sort(input);
+        int[] expect = new int[] {1, 1, 2, 4, 5};
+        assertThat(result, is(expect));
+        //напишите здесь тест, проверяющий сортировку массива из 10 элементов методом пузырька, например {1, 5, 4, 2, 3, 1, 7, 8, 0, 5}.
+    }
 }

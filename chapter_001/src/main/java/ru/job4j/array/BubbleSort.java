@@ -1,6 +1,8 @@
 package ru.job4j.array;
 
-
+/**
+ * сортировка массива по возрастанию
+ */
 
 public class BubbleSort {
     public int[] sort(int[] array) {
