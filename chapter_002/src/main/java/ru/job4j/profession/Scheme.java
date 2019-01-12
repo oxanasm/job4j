@@ -5,7 +5,7 @@ package ru.job4j.profession;
  */
 
 public class Scheme {
-    public String name;
+    private String name;
 
     public Scheme() {
 

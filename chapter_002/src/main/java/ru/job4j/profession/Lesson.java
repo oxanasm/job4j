@@ -5,7 +5,7 @@ package ru.job4j.profession;
  */
 
 public class Lesson {
-    public String number;
+    private String number;
 
     public Lesson() {
 

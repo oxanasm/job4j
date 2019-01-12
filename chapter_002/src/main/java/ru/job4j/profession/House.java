@@ -5,7 +5,7 @@ package ru.job4j.profession;
  */
 
 public class House {
-    public String size;
+    private String size;
 
     public House() {
 
