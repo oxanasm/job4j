@@ -75,7 +75,7 @@ public class StartUI {
             } else if (SHOW.equals(answer)) {
                 this.showAllItems();
             } else if (EDIT.equals(answer)) {
-                this.edit();
+                this.replace();
             } else if (DELETE.equals(answer)) {
                 this.delete();
             } else if (FINDBYID.equals(answer)) {
@@ -111,7 +111,7 @@ public class StartUI {
     /**
      * Метод реализует редактирование заявки.
      */
-    private void edit() {
+    private void replace() {
         System.out.println("------------ Редактирование заявки --------------");
         String id = this.input.ask("Введите id заявки, которую нужно отредактировать: ");
         Item edit = this.tracker.findById(id);
