@@ -105,7 +105,10 @@ public class StartUI {
      */
     private void showAllItems() {
         System.out.println("------------ Список всех заявок ------------");
-        System.out.println(Arrays.toString(this.tracker.getAll()));
+        final Item[] all = tracker.getAll();
+        for (Item item : all) {
+            System.out.println(item);
+        }
     }
 
     /**
@@ -114,12 +117,11 @@ public class StartUI {
     private void replace() {
         System.out.println("------------ Редактирование заявки --------------");
         String id = this.input.ask("Введите id заявки, которую нужно отредактировать: ");
+        String name = this.input.ask("Введите новое имя заявки: ");
+        String descripition = this.input.ask("Введите новое описание заявки: ");
         Item edit = this.tracker.findById(id);
-        if (edit != null) {
-            String name = this.input.ask("Введите новое имя заявки: ");
-            String desc = this.input.ask("Введите новое описание заявки: ");
-            edit.setName(name);
-            edit.setDescripition(desc);
+        if (tracker.replace(id, new Item(name, descripition))) {
+            System.out.println("Заявка обновлена");
         } else {
             System.out.println("Совпадений нет");
         }
@@ -146,9 +148,7 @@ public class StartUI {
         String id = this.input.ask("Введите id искомой заявки: ");
         Item findId = this.tracker.findById(id);
         if (findId != null) {
-            System.out.println(id);
-            System.out.println(findId.getName());
-            System.out.println(findId.getDescripition());
+            System.out.println(findId);
         } else {
             System.out.println("Совпадений нет");
         }
@@ -161,11 +161,9 @@ public class StartUI {
         System.out.println("------------ Поиск заявки по имени ------------");
         String name = this.input.ask("Введите имя заявки: ");
         Item[] items = this.tracker.findByName(name);
-        if (items[0] != null) {
+        if (items.length != 0) {
             for (Item findName: items) {
-                System.out.println(findName.getId());
-                System.out.println(findName.getName());
-                System.out.println(findName.getDescripition());
+                System.out.println(findName);
             }
         } else {
             System.out.println("Совпадений нет");

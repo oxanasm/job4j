@@ -39,6 +39,7 @@ public class Tracker {
         for (int i = 0;  i < position; i++) {
             if (item.getId().equals(id)) {
                 this.items[i] = item;
+                item.setId(id);
                 result = true;
                 break;
             }
@@ -52,14 +53,12 @@ public class Tracker {
      */
     public boolean delete(String id) {
         boolean result = false;
-        int i = 0;
-        for (Item item : items) {
-            if (item.getId().equals(id)) {
-                System.arraycopy(this.items, i + 1, this.items, i, items.length - 1 - i);
+        for (int i = 0; i < position; i++) {
+            if (items[i].getId().equals((id))) {
+                System.arraycopy(this.items, i + 1, this.items, i, items.length - i - 1);
                 result = true;
                 break;
             }
-            i++;
         }
         return result;
     }

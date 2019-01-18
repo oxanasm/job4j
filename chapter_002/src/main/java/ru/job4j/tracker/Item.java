@@ -11,18 +11,18 @@ package ru.job4j.tracker;
 public class Item {
     private String id;
 
-    public String name;
+    private String name;
 
-    public String descripition;
+    private String descripition;
 
-    public long create;
+    private long create;
 
-   // public String [] comments;
+   // private String [] comments;
 
-    public Item(String name, String descripition, long create) {
+    public Item(String name, String descripition) {
         this.name = name;
         this.descripition = descripition;
-        this.create = create;
+        this.create = System.currentTimeMillis();
         //this.comments = comments;
     }
 
@@ -48,5 +48,22 @@ public class Item {
 
     public void setId(String id) {
         this.id = id;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public void setDescripition(String descripition) {
+        this.descripition = descripition;
+    }
+
+    @Override
+    public String toString() {
+        return "Item{" +
+                "id='" + id +'\'' +
+                ", name='" + name + '\'' +
+                ", create=" + create +
+                '}';
     }
 }
