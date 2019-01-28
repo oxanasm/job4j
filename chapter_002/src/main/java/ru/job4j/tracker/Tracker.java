@@ -82,10 +82,10 @@ public class Tracker {
      * Метод поиска заявки по имени.
      * @param key имя искомой заявки.
      */
-    protected Item [] findByName(String key) {
+    protected Item[] findByName(String key) {
         int i = 0;
         Item[] result = new Item[position];
-        int match = position+1;
+        int match = position + 1;
         for (Item item : items) {
             if (item != null && item.getName().equals(key)) {
                 result[i] = item;
