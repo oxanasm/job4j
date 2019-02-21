@@ -4,6 +4,7 @@ package ru.job4j.tracker;
  * Эмуляция поведения пользователя
  */
 
+
 public class StubInput implements Input {
     /**
      * Это поле содержит последовательность ответов пользователя.
@@ -14,8 +15,8 @@ public class StubInput implements Input {
      * desc - описание заявки
      * y - выйти из трекера.
      */
-    private final String[] value;
 
+    private final String[] value;
     /**
      * Поле считает количество вызовом метода ask.
      * При каждом вызове надо передвинуть указатель на новое число.

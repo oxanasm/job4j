@@ -7,6 +7,7 @@ import java.util.*;
  * @version $Id$
  * @since 0.1
  */
+
 public class Tracker {
     /**
      * Массив для хранение заявок.
@@ -104,8 +105,7 @@ public class Tracker {
      */
 
     private String generateId() {
-        String id = String.valueOf(System.currentTimeMillis() + RN.nextInt());
-        return id;
+        return String.valueOf(System.currentTimeMillis() + RN.nextInt());
     }
 
     /**

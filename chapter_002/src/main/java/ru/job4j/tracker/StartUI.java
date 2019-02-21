@@ -1,7 +1,5 @@
 package ru.job4j.tracker;
 
-
-
 /**
  * Точка входа в программу
  */

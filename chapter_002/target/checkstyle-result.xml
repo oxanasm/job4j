@@ -1,11 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <checkstyle version="6.18">
-<file name="C:\projects\job4j\chapter_002\src\main\java\ru\job4j\tracker\ConsoleInput.java">
-</file>
-<file name="C:\projects\job4j\chapter_002\src\main\java\ru\job4j\tracker\Input.java">
-</file>
-<file name="C:\projects\job4j\chapter_002\src\main\java\ru\job4j\tracker\Item.java">
-</file>
 <file name="C:\projects\job4j\chapter_002\src\main\java\ru\job4j\tracker\StartUI.java">
 </file>
 <file name="C:\projects\job4j\chapter_002\src\main\java\ru\job4j\tracker\StubInput.java">
