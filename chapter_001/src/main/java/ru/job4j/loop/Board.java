@@ -9,11 +9,11 @@ public class Board {
         String ln = System.lineSeparator();
         int i;
         int j;
-        for (i=0; i<height; i++ ) {
-            for (j=0; j<width; j++) {
+        for (i = 0; i < height; i++) {
+            for (j = 0; j < width; j++) {
                 // условие проверки, что писать пробел или X
                 // Выше в задании мы определили закономерность, когда нужно проставлять X
-                if ((j+i) % 2 == 0) {
+                if ((j + i) % 2 == 0) {
                     screen.append("X");
                 } else {
                     screen.append(" ");

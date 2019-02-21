@@ -1,8 +1,10 @@
-#Mon Jan 28 20:23:37 KRAT 2019
-C\:\\projects\\job4j\\chapter_002\\src\\main\\java\\ru\\job4j\\tracker\\Tracker.java=1548681811091
-C\:\\projects\\job4j\\chapter_002\\src\\main\\java\\ru\\job4j\\tracker\\Item.java=1548681811109
-C\:\\projects\\job4j\\chapter_002\\src\\main\\java\\ru\\job4j\\tracker\\StartUI.java=1547828212692
-C\:\\projects\\job4j\\chapter_002\\src\\test\\java\\ru\\job4j\\tracker\\TrackerTest.java=1548681811125
-C\:\\projects\\job4j\\chapter_002\\src\\main\\java\\ru\\job4j\\tracker\\ConsoleInput.java=1547828731513
+#Wed Feb 20 20:30:04 KRAT 2019
 C\:\\projects\\job4j\\chapter_002\\src\\main\\java\\ru\\job4j\\tracker\\Input.java=1547738280360
-configuration*?=46EF00700ACC77192B6AB0D3945A2F7C54045A8C
+C\:\\projects\\job4j\\chapter_002\\src\\main\\java\\ru\\job4j\\tracker\\Tracker.java=1548681811091
+C\:\\projects\\job4j\\chapter_002\\src\\main\\java\\ru\\job4j\\tracker\\StartUI.java=1550666128092
+C\:\\projects\\job4j\\chapter_002\\src\\main\\java\\ru\\job4j\\tracker\\StubInput.java=1549504543009
+C\:\\projects\\job4j\\chapter_002\\src\\test\\java\\ru\\job4j\\tracker\\StartUITest.java=1550669393125
+C\:\\projects\\job4j\\chapter_002\\src\\main\\java\\ru\\job4j\\tracker\\ConsoleInput.java=1547828731513
+C\:\\projects\\job4j\\chapter_002\\src\\test\\java\\ru\\job4j\\tracker\\TrackerTest.java=1548681811125
+configuration*?=DFE47F2508BF53E26D60BDB8A8BD36D49B86DC0A
+C\:\\projects\\job4j\\chapter_002\\src\\main\\java\\ru\\job4j\\tracker\\Item.java=1548681811109

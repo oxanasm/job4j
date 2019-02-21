@@ -1,5 +1,10 @@
 package ru.job4j.array;
 
+
+/**
+ * проверка заполнения массива
+ */
+
 public class Check {
     public boolean mono(boolean[] data) {
         boolean result = true;

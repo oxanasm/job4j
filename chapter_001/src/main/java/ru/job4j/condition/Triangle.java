@@ -14,7 +14,7 @@ public class Triangle {
         this.c = c;
     }
     public double period(double ab, double ac, double bc) {
-        return ( ab + ac + bc ) / 2; // вместо -1 нужно написать формулу вычисляющую полуперимент.
+        return (ab + ac + bc) / 2; // вместо -1 нужно написать формулу вычисляющую полуперимент.
     }
     public double area() {
         double rsl = -1; // мы устанавливаем значение -1, так как может быть что треугольника нет. Это значение говорит о том. что треугольника нет.
@@ -31,7 +31,7 @@ public class Triangle {
         return rsl;
     }
     private boolean exist(double ab, double ac, double bc) {
-        return ((ab < bc + ac) && ( bc < ab + ac ) && ( ac < ab + bc)) ? true : false;
+        return ((ab < bc + ac) && (bc < ab + ac) && (ac < ab + bc)) ? true : false;
     }
 }
 

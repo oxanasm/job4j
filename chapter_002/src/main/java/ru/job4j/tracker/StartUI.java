@@ -118,9 +118,8 @@ public class StartUI {
         System.out.println("------------ Редактирование заявки --------------");
         String id = this.input.ask("Введите id заявки, которую нужно отредактировать: ");
         String name = this.input.ask("Введите новое имя заявки: ");
-        String descripition = this.input.ask("Введите новое описание заявки: ");
-        Item edit = this.tracker.findById(id);
-        if (tracker.replace(id, new Item(name, descripition))) {
+        String description = this.input.ask("Введите новое описание заявки: ");
+        if (tracker.replace(id, new Item(name, description))) {
             System.out.println("Заявка обновлена");
         } else {
             System.out.println("Совпадений нет");
